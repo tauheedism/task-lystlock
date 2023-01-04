@@ -6,13 +6,6 @@ const authentication = (req,res,next)=>{
         const token = req.header('Authorization');
         console.log(token);
         const user = jwt.verify(token,'tauheed615adil02sohail12farhan22fsklfjslfjs8s8fsfslfsf88')
-        // User.findByPk(user.ExpenseUserId)
-        // .then(user =>{
-        //     console.log(JSON.stringify(user));
-        //    req.user = user;
-        //    console.log(req.user)
-        //     next();
-        // })
         }
     catch (err){
         console.log(err)
